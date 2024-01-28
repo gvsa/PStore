@@ -6,11 +6,11 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 
-import org.automatics.qa.core.TestDataFactory;
 import org.automatics.qa.testfwk.base.BaseClass;
 import org.automatics.qa.testfwk.base.TestProperties;
 import org.automatics.qa.testfwk.config.RuntimeConfig;
 import org.automatics.qa.testfwk.core.StaticFactory;
+import org.automatics.qa.testfwk.core.TestDataFactory;
 import org.testng.ITestContext;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;

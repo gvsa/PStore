@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
-import org.automatics.qa.core.TestDataFactory;
 import org.automatics.qa.testfwk.base.TestProperties;
 import org.automatics.qa.testfwk.config.RuntimeConfig;
 import org.slf4j.Logger;

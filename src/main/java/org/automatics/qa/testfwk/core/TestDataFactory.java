@@ -1,4 +1,4 @@
-package org.automatics.qa.core;
+package org.automatics.qa.testfwk.core;
 
 import java.io.File;
 import java.io.IOException;
