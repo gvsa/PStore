@@ -4,6 +4,8 @@ Pre-requisites:
 - IDE with JDK8, Maven 3+ installed (Eclipse Photon IDe recommended)
 
 Project Structure:
+- The framework has been designed to be an autonomous execution shaded jar file which <b>only</b> requires JRE8 on the target machine
+- The shaded jar file ensures zero failures due to dependencies, as well as allows robust version control and a build-once-reuse-multiple usage
 - The framework consists of the following packages under the parent package - <b>org.automatics.qa</b>
   - testfwk.base - contains the BaseClass and TestProperties class for proper functioning of framework at runtime
   - testfwk.config - contains RunTimeConfig class that helps read parameters passed via the <b>default.properties</b> file
