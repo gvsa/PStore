@@ -25,7 +25,7 @@ public class UpdatePetTest extends DefaultTestNGTest {
 		log.info("current pet name=" + currentPetName);
 		
 		String currentPetId = currentPetInfo.getAsJsonObject().get("id").getAsString();
-		String modifiedPetName="modified_by_gvs"+ currentPetId;
+		String modifiedPetName="modified"+ currentPetId;
 		
 		currentPetInfo.remove("name");
 		currentPetInfo.addProperty("name", modifiedPetName);
@@ -46,8 +46,9 @@ public class UpdatePetTest extends DefaultTestNGTest {
 		JsonObject responseJson = new JsonParser().parse(responseObject.asString()).getAsJsonObject();
 		
 		String updatedName = responseJson.get("name").getAsString();
+		log.info("updatedName="+updatedName);
 		
-		softassert.assertEquals(updatedName, updatedName);
+		softassert.assertEquals(updatedName, currentPetInfo.get("name").getAsString());
 		
 		softassert.assertAll();
 	}
